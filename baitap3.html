@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> tinh giai thua</title>
+</head>
+<body>
+<script>
+    let randomNumber = parseInt(prompt("Nhap mot so nguyen bat ky: "));
+    function factorial(a) {
+        let result =1;
+        if(a ===1 || a===0){
+           alert("Lũy thừa số vừa nhập là: " +result);
+        }
+        else {for(let i=1; i<=a;i++){
+            result*=i;
+        }
+            alert("Lũy thừa số vừa nhập là: " + result);
+        }
+    }
+    factorial(randomNumber);
+
+</script>
+</body>
+</html>

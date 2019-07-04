@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=parseInt(prompt("Nhap so luong phan tu trong mang: "));
+
+    let arr1 = [];
+    if(n>0) {
+        for (i = 1; i <= n; i++) {
+            let letteri = prompt(" nhap phan tu tai vi tri index = " + i + " cua mang");
+            arr1.push(letteri);
+        }alert("mang da nhap la: " + arr1);
+    }
+
+
+    let randomletter1 =prompt("Enter a random letter");
+
+
+    function match(arr,randomletter) {
+        let count = 0;
+        for (i = 0; i < arr.length; i++) {
+            if (randomletter === arr[i]) {
+                count++;
+
+            }
+
+
+        }
+    if(count ==0){
+        return -1;
+    }
+    return count;
+    }
+
+    if (match(arr1,randomletter1)== -1){
+        alert("khong co phan tu " + randomletter1+ " nay trong mang");
+    }else{alert("so lan xuat hien cua "+ randomletter1 + " trong mang la "+ match(arr1,randomletter1));}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baitap2</title>
+</head>
+<body>
+<script>
+    let length =parseFloat(prompt("Nhập chiều dài hình chữ nhật"));
+    let width =parseFloat(prompt("Nhập chiều rộng hình chữ nhật"));
+
+    function SRectangle(a,b){
+        if(a>0 && b>0){
+            alert("Dien tich hinh chu nhat voi kich thuoc vua nhap la: " + a*b);
+        } else{alert("Nhập lại kích thước hình chữ nhật lớn hơn 0");
+        }
+
+    }
+    SRectangle(length,width);
+
+    let radius=parseFloat(prompt("Nhập bán kính hình tròn: "));
+    function SCircle(c) {
+        if(c>0){
+            alert("Dien tich hinh tron la: " + Math.PI*c*c);
+        }else {alert("Nhập lại giá trị bán kính hình tròn lớn hơn 0");
+        }
+
+    }
+    SCircle(radius);
+    function CVhinhtron(d) {
+        if(d>0){
+            alert("Chu vi hinh tron la:" + Math.PI*d);
+        }else{alert("Nhập lại bán kính hình tròn")}
+
+    }
+    CVhinhtron(radius);
+
+</script>
+</body>
+</html>

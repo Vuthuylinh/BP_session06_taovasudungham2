@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sosanh</title>
+</head>
+<body>
+<script>
+
+    let number1=parseInt(prompt("nhap so nguyen thu nhat"));
+    let number2=parseInt(prompt("nhap so nguyen thu hai"));
+    let number3=parseInt(prompt("nhap so nguyen thu ba"));
+
+    function compare(a,b,c) {
+        let min = a;
+        if(min>b){
+            min = b;
+            if(min>c){
+                min=c;
+            }
+        }alert("the smallest number is: "+min);
+
+    }
+    compare(number1,number2,number3);
+</script>
+</body>
+</html>

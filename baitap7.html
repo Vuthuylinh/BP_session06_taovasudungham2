@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>swap</title>
+</head>
+<body>
+<script>
+    let number1=parseInt(prompt("nhap so nguyen thu nhat"));
+    let number2=parseInt(prompt("nhap so nguyen thu hai"));
+    function swapNumber(a,b) {
+        let temporary =a;
+        a=b;
+        b=temporary;
+        alert("vi tri 2 so da nhap dao nguoc thanh: " +a +"; "+b);
+    }
+    swapNumber(number1,number2);
+</script>
+</body>
+</html>
